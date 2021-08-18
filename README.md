@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/ichiklaus/fementor-card_component.git)
-- Live Site URL: [Add live site URL here](https://ichiklaus.github.io/fementor-card-component/)
+- Solution URL: (https://github.com/ichiklaus/fementor-card_component.git)
+- Live Site URL: [Stats preview card component](https://ichiklaus.github.io/fementor-card-component/)
 
 ## My process
 
