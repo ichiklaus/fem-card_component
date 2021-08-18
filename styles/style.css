@@ -1,0 +1,279 @@
+/** Imports **/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+/** Variables **/
+:root {
+  --main-bg: hsl(233, 47%, 7%);
+  --card-bg: hsl(244, 38%, 16%);
+  --accent: hsl(277, 64%, 61%);
+
+  --ac: rgb(157, 84, 199);
+
+  --white: hsl(0, 0%, 100%);
+  --main-para: hsla(0, 0%, 100%, 0.75);
+  --stat-headings: hsla(0, 0%, 100%, 0.6);
+}
+
+/** Resets **/
+body {
+  line-height: 1.75;
+}
+
+*,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: var(--accent);
+}
+
+/** Fonts **/
+body {
+  font-family: "Inter", sans-serif;
+}
+.content__heading--style,
+.stats__heading--style {
+  font-weight: 700;
+}
+
+.content__heading--style {
+  font-size: 2em;
+}
+.content__heading--style,
+.stats--style {
+  color: var(--white);
+  font-weight: 700;
+}
+
+.stats--style {
+  font-size: 1.25em;
+}
+
+p {
+  font-size: 1em;
+}
+
+.content__para--style {
+  color: var(--main-para);
+  font-weight: 400;
+}
+
+.stats__heading--style {
+  color: var(--stat-headings);
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.attribution {
+  color: white;
+}
+
+/** Base styles **/
+body {
+  background-color: var(--main-bg);
+}
+
+.accent {
+  color: var(--accent);
+}
+
+.content__heading,
+.content__para,
+.stats {
+  text-align: center;
+}
+
+.content--style {
+  background-color: var(--card-bg);
+}
+
+.stats {
+  text-transform: uppercase;
+  letter-spacing: 0.1vw;
+}
+
+.stats__heading {
+  padding-bottom: 1.5rem;
+}
+
+.attribution {
+  font-size: 15px;
+  padding-top: 0.75rem;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+/** Mobile **/
+@media screen and (max-width: 480px) {
+  .card {
+    padding: 1.5rem;
+  }
+
+  .header {
+    width: 100%;
+    height: auto;
+  }
+
+  .header-image {
+    width: auto;
+    height: 280px;
+    background: url(/images/image-header-mobile.jpg) var(--accent);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: local;
+    background-blend-mode: soft-light;
+    opacity: 0.65;
+    filter: brightness(90%);
+    -webkit-filter: brightness(90%);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .content {
+    padding: 2rem 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+  .content__heading {
+    padding: 0 2rem 1.25rem 2rem;
+    line-height: 1.25;
+  }
+
+  .content__para {
+    padding: 0 3rem 2.5rem 3rem;
+  }
+}
+
+/** Tablet **/
+@media screen and (min-width: 481px) and (max-width: 1023px) {
+  .card {
+    padding: 3rem 0;
+    margin: 0 5rem;
+  }
+  
+  .content {
+    padding: 2rem 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+  .content__heading {
+    padding: 0 2rem 1.25rem 2rem;
+    line-height: 1.25;
+  }
+
+  .content__para {
+    padding: 0 3rem 2.5rem 3rem;
+  }
+}
+
+/** Tablet Landscape **/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+ .card {
+   padding: 2rem;
+ }
+ .header {
+  width: 100%;
+  max-height: 100%;
+}
+
+.header-image {
+  width: auto;
+  height: 480px;
+  background: url(/images/image-header-desktop.jpg) var(--accent);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: local;
+  background-blend-mode: soft-light;
+  opacity: 0.65;
+  filter: brightness(90%);
+  -webkit-filter: brightness(90%);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+  
+}
+
+/** Desktop **/
+@media screen and (min-width: 1024px)  {
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+  }
+
+  .flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 0 1rem;
+  }
+
+  .header {    
+    width: 100%;
+    height: 100%;    
+  }
+
+  .header-image {  
+    width: 100%;
+    height: 100%;
+    background: url(/images/image-header-desktop.jpg) var(--accent);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: local;
+    background-blend-mode: soft-light;
+    opacity: 0.65;
+    filter: brightness(90%);
+    -webkit-filter: brightness(90%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;   
+    padding-top: 4rem;
+    padding-bottom: 2rem; 
+    padding-left: 5rem;
+    padding-right: 2rem;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  .content__heading, .content__para, .stats {
+    text-align: left;
+  }
+
+  .content__heading, .content__para{    
+    padding-right: 7rem;
+  }
+
+  .content__para {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+
+  .stats {
+    display: flex;
+  }
+  
+  .stats > div {
+    margin-right: 60px;
+  }
+}
