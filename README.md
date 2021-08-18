@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: (https://github.com/ichiklaus/fementor-card_component.git)
-- Live Site URL: [Stats preview card component](https://ichiklaus.github.io/fementor-card-component/)
+- Live Site URL: [Stats preview card component](https://ichiklaus.github.io/fementor-card_component/)
 
 ## My process
 
