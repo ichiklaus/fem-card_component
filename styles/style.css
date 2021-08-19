@@ -156,6 +156,27 @@ body {
     padding: 3rem 0;
     margin: 0 5rem;
   }
+
+  .header {
+    width: 100%;
+    height: auto;
+  }
+
+  .header-image {
+    width: auto;
+    height: 380px;
+    background: url(../images/image-header-mobile.jpg) var(--accent);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: local;
+    background-blend-mode: soft-light;
+    opacity: 0.65;
+    filter: brightness(90%);
+    -webkit-filter: brightness(90%);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
   
   .content {
     padding: 2rem 0;
